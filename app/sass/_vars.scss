@@ -1,3 +1,38 @@
-$accent-color: #0eb493;
-$body-color: #282528;
-$b-video--bg: #31d4e7;
+//VARS
+$body-color: #000000;
+$accent: #f14a58;
+$wrap-product-bg: #f6f6f6;
+$border-color: #e5e5e5;
+$btn-sm--selected: #707070;
+$highlight-slide-bg: #f5de75;
+//NAV_BAR STYLE
+$bar-width: 14px;
+$bar-height: 2px;
+$bar-spacing: 5px;
+//MIXIN
+//PLACEHOLDER CROSSBROWSER
+@mixin input-placeholder {
+  &.placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+}
+@mixin inline-block() {
+  display: inline-block;
+  vertical-align: middle;
+}
+@mixin vertical-align {
+  top: 50%;
+  transform: translateY(-50%);
+}
